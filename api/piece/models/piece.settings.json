@@ -1,24 +1,25 @@
 {
   "kind": "collectionType",
-  "collectionName": "categories",
+  "collectionName": "pieces",
   "info": {
-    "name": "category"
+    "name": "piece"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "name": {
-      "type": "string",
-      "required": true,
-      "unique": true
+    "title": {
+      "type": "string"
     },
-    "pieces": {
-      "via": "category",
-      "collection": "piece"
+    "description": {
+      "type": "text"
     },
-    "thumbnail": {
+    "category": {
+      "model": "category",
+      "via": "pieces"
+    },
+    "image": {
       "model": "file",
       "via": "related",
       "allowedTypes": [

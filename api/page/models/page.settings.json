@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "restaurants",
+  "collectionName": "pages",
   "info": {
-    "name": "restaurant"
+    "name": "page"
   },
   "options": {
     "increments": true,
@@ -11,15 +11,16 @@
   "attributes": {
     "name": {
       "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "order": {
+      "type": "integer",
       "required": true,
       "unique": true
     },
     "description": {
       "type": "richtext"
-    },
-    "categories": {
-      "via": "restaurants",
-      "collection": "category"
     }
   }
 }
