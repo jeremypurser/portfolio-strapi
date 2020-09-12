@@ -21,6 +21,10 @@
     },
     "description": {
       "type": "richtext"
+    },
+    "slug": {
+      "type": "string",
+      "unique": true
     }
   }
 }
