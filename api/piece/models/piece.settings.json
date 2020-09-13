@@ -19,8 +19,17 @@
       "model": "category",
       "via": "pieces"
     },
-    "image": {
+    "thumbnail": {
       "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "images": {
+      "collection": "file",
       "via": "related",
       "allowedTypes": [
         "images"
