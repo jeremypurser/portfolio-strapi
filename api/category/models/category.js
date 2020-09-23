@@ -8,13 +8,15 @@
 const deploy = require("../../../util/deploy-hook");
 
 module.exports = {
-  afterCreate() {
-    deploy();
-  },
-  afterUpdate() {
-    deploy();
-  },
-  afterDelete() {
-    deploy();
+  lifecycles: {
+    afterCreate() {
+      deploy();
+    },
+    afterUpdate() {
+      deploy();
+    },
+    afterDelete() {
+      deploy();
+    },
   },
 };
