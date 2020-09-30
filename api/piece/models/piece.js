@@ -1,5 +1,4 @@
 "use strict";
-const fetch = require("node-fetch");
 
 /**
  * Read the documentation (https://strapi.io/documentation/v3.x/concepts/models.html#lifecycle-hooks)
