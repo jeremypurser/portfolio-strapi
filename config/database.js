@@ -10,9 +10,9 @@ module.exports = ({ env }) => ({
         database: env("DATABASE_NAME", "strapi"),
         username: env("DATABASE_USERNAME", ""),
         password: env("DATABASE_PASSWORD", ""),
-      },
-      ssl: {
-        rejectUnauthorized: env.bool("DATABASE_SSL_SELF", false),
+        ssl: {
+          rejectUnauthorized: env.bool("DATABASE_SSL_SELF", false),
+        },
       },
       options: {
         ssl: env.bool("DATABASE_SSL", false),
