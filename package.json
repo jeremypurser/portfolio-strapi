@@ -13,7 +13,7 @@
   "dependencies": {
     "knex": ">=0.15.0 <0.22.0",
     "node-fetch": "^2.6.1",
-    "pg": "8.4.x",
+    "pg": "^8.7.1",
     "sqlite3": "latest",
     "strapi": "3.1.4",
     "strapi-admin": "3.1.4",
@@ -31,10 +31,6 @@
   },
   "strapi": {
     "uuid": "b74692b1-a822-4c1a-9594-8598d3c56df2"
-  },
-  "engines": {
-    "node": "13.x.x",
-    "npm": "6.x.x"
   },
   "license": "MIT"
 }
